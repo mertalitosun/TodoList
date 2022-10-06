@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: #000;
+}
+.brand{
+   display: flex;
+   justify-content: center;
+}
+header {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 10px 5px 15px #FFFBE9; */
+}
+header h1{
+    margin: 0 auto;
+    color: #FFFAE7;
+    font-weight: 600;
+}
+#add{
+    background-color: #7F8487;
+    font-size: 10px;
+}
+#add:hover{
+    background-color: #fFF;
+}
+
+.todoList{
+    padding: 20px;
+    margin: 50px auto;
+    text-align: center;
+    width: 50%;
+    box-shadow: 3px 0px 10px  #FFFBE9;
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: #FFFBE9;
+    border-bottom-right-radius: 50px;
+    visibility: hidden;
+    
+}
+.todoItem{
+    box-shadow: 5px 0px 10px #FFFBE9;
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: #FFFBE9;
+    border-bottom-right-radius: 50px;
+    padding: 20px;
+    margin: 30px auto;
+    background-color: #383838;
+    transition: .4s;
+}
+.todoItem:hover{
+    transform: translate(0px,-10px);
+}
+#input{ 
+    /* background-color: #112B3C; */
+    padding: 4px 30px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    color: #000000;
+}
+li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+span{
+    color: #FF6464;
+}
+
+/* 500 px in altında genişlik 100% olur */
+@media (max-width:500px){
+    .todoList{
+        width: 100%;
+    }
+}

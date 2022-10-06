@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./app.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="container mainTodo">
+        <div class="brand">
+            <h1  id="brand"></h1>
+            <button id="addBrand" class="btn"><i class="fa-solid fa-plus"></i></button>
+            <header class="navbar navbar-expand-lg">
+                <h1><!--<span></span>--> <span class="brandTodo">'s To Do List</span></h1>
+            </header>
+        </div>
+       
+        <div class="container todoList">
+            <input type="text" id="input" placeholder="add new task">
+            <button id="add" class="btn"><i class="fa-solid fa-plus"></i></button>
+            <!-- <div class="todoItem">
+                <ul>
+                    <li>
+                        <span>aa</span>
+                        <div class="butons"><button id="edt" class="edit btn btn-warning"><i class="fa-solid fa-pencil"></i></button>
+                            <button id="dlt" class="delete btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                            <button id="edt" class="delete btn btn-warning"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
